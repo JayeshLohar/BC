@@ -1,4 +1,12 @@
 # BC
+Name : Jayesh Gadilohar
+
+MIS : 111910048
+
+Div : 2
+
+Batch : S4
+
 bc is an arbitrary precision calculator made using C programming language
 
 It evaluates expressions which contain operators like :
@@ -11,14 +19,14 @@ Power Operator : ^
 
 Relational Operators : <, >, <=, >=, ==, !=
 
-Logical Operators : !, &&, ||
+Logical Operators : &&, ||
 
-Math Functions : sqrt(), s(), c(), t()
+Math Functions : sq(), cb(), sqrt(), fact(), len()
 
-(s(), c(), and t() stand for sin(), cos() and tan() respectively)
+Trigonometric Functions : s(), c(), t()
 
 To compile the code, give the command : make all
 
 To run the code : ./bc
 
-Try './bc --help' to understand bc
+Try './bc --help' or './bc -h' to understand bc
