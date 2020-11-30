@@ -1,0 +1,10 @@
+Mon Nov 30 10:49:19 2020
+
+Eq  : sqrt(45)
+Sol : 6.7082039324
+
+Eq  : rsacle = 5
+wrong character use..!! 
+
+Eq  : sqrt(45)
+Sol : 6.7082

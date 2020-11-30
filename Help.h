@@ -1,0 +1,12 @@
+char *removespace( char *str );
+int scale( char *str );
+int rscale( char *str );
+int quit( char *str );
+void help();
+void use();
+void preced();
+void info();
+void version();
+void history();
+void all_history();
+void del_history();
