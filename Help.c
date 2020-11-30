@@ -45,7 +45,7 @@ void use() {
     printf(" 8. Cube                : cb \n");
     printf(" 8. Sqroot              : sqrt \n");
     printf(" 8. Length              : len \n");
-    printf(" 9. Compare             : < > >= <= == \n\n");
+    printf(" 9. Compare             : < > >= <= == != \n\n");
     printf("10. Logical Operators   : && ||\n");
     printf("Some Trigonometric functions also can be performed on BC\n");
     printf(" 1. Sine                : s \n");
