@@ -48,9 +48,9 @@ void use() {
     printf(" 9. Compare             : < > >= <= == != \n\n");
     printf("10. Logical Operators   : && ||\n");
     printf("Some Trigonometric functions also can be performed on BC\n");
-    printf(" 1. Sine                : s \n");
-    printf(" 2. Cosine              : c \n");
-    printf(" 3. Tangent             : t \n\n");
+    printf(" 1. Sine                : s sin\n");
+    printf(" 2. Cosine              : c cos\n");
+    printf(" 3. Tangent             : t tan\n\n");
     return ;
 }
 
