@@ -13,7 +13,11 @@
 int main( int argc, char **argv ) {
     if (argc == 2) {
 		if ( !strcmp(argv[1], "--help") || !strcmp(argv[1], "-h")) {
-            help() ;
+            		help() ;
+			return 0;
+		}
+	    	if ( !strcmp(argv[1], "--use") || !strcmp(argv[1], "-u")) {
+			use() ;
 			return 0;
 		}
 		if ( !strcmp(argv[1], "--version") || !strcmp(argv[1], "-v")) {
