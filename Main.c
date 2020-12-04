@@ -81,11 +81,17 @@ int main( int argc, char **argv ) {
             break ;
         }
         else if( scale( line ) != INT_MIN ){
-            sc = scale( line );
+            if( scale( line ) == INT_MAX )
+                printf("%d\n", sc );
+            else
+                sc = scale( line );
             sflag = 1 ;
         }
         else if( rscale( line ) != INT_MIN ){
-            rsc = rscale( line );
+            if( rscale( line ) == INT_MAX )
+                printf("%d\n", rsc );
+            else
+                rsc = rscale( line );
             rflag = 1 ;
         }
 
