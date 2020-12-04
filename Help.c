@@ -110,7 +110,11 @@ int scale( char *str ) {
     char ch[2048] ;
     strcpy( ch, str );
     removespace( ch );
-
+    
+    char hp[6] = "scale";
+    if( strcmp( hp, ch ) == 0 )
+        return INT_MAX ;
+	
     if( ch[0] != 's' || ch[1] != 'c' || ch[2] != 'a' || ch[3] != 'l' || ch[4] != 'e' || ch[5] != '=' )
         return INT_MIN ;
     int i = 6 ;
@@ -130,6 +134,10 @@ int rscale( char *str ) {
     char ch[1024] ;
     strcpy( ch, str );
     removespace( ch );
+	
+    char hp[7] = "rscale";
+    if( strcmp( hp, ch ) == 0 )
+        return INT_MAX ;
 
     if( ch[0] != 'r' || ch[1] != 's' || ch[2] != 'c' || ch[3] != 'a' || ch[4] != 'l' || ch[5] != 'e' || ch[6] != '=' )
         return INT_MIN ;
