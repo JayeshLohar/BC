@@ -21,6 +21,10 @@ Relational Operators : <, >, <=, >=, ==, !=
 
 Logical Operators : &&, ||
 
+Left shift : <<
+
+Right shift : >>
+
 Math Functions : sq(), cb(), sqrt(), fact(), len()
 
 Trigonometric Functions : s(), c(), t()
