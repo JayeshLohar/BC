@@ -764,6 +764,18 @@ int check_string( char *str ) {
             cl_b++ ;
         }
         else if( str[i]=='s' || str[i]=='c' || str[i]=='t' || str[i]=='f' || str[i]=='s' || str[i]=='l' || str[i]==' ' || str[i]=='\t' ){
+	    if( str[i] == 's' && str[i+1] == 'i' && str[i+2] == 'n' ){
+                str[i] = 's' ;
+                str[i+1] = str[i+2] = ' ' ;
+            }
+	    if( str[i] == 'c' && str[i+1] == 'o' && str[i+2] == 's' ){
+                str[i] = 'c' ;
+                str[i+1] = str[i+2] = ' ' ;
+            }
+	    if( str[i] == 't' && str[i+1] == 't' && str[i+2] == 'n' ){
+                str[i] = 't' ;
+                str[i+1] = str[i+2] = ' ' ;
+            }
             if( str[i] == 's' && str[i+1] == 'q' && str[i+2] == 'r' && str[i+3] == 't' ){
                 str[i] = 'r' ;
                 str[i+1] = str[i+2] = str[i+3] = ' ' ;
