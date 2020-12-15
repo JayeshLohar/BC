@@ -764,42 +764,15 @@ int check_string( char *str ) {
             cl_b++ ;
         }
         else if( str[i]=='s' || str[i]=='c' || str[i]=='t' || str[i]=='f' || str[i]=='s' || str[i]=='l' || str[i]==' ' || str[i]=='\t' ){
-	    if( str[i] == 's' && str[i+1] == 'i' && str[i+2] == 'n' && str[i+3] == '(' ){
-                str[i] = 's' ;
-                str[i+1] = str[i+2] = ' ' ;
-	    }
-	    else if( str[i] == 's' ){
-		if( str[i+1] != '(' )
-		    return 4 ;
-	    }
-
-	    if( str[i] == 'c' && str[i+1] == 'o' && str[i+2] == 's' && str[i+3] == '(' ){
-                str[i] = 'c' ;
-                str[i+1] = str[i+2] = ' ' ;
-            }
-	    else if( str[i] == 'c' ){
-		if( str[i+1] != '(' )
-		    return 4 ;
-	    }
-
-	    if( str[i] == 't' && str[i+1] == 'a' && str[i+2] == 'n' && str[i+3] == '(' ){
-                str[i] = 't' ;
-                str[i+1] = str[i+2] = ' ' ;
-            }
-	    else if( str[i] == 't' ){
-		if( str[i+1] != '(' )
-		    return 4 ;
-	    }
-
 	    if( str[i] == 's' && str[i+1] == 'q' && str[i+2] == 'r' && str[i+3] == 't' && str[i+4] == '(' ){
                 str[i] = 'r' ;
                 str[i+1] = str[i+2] = str[i+3] = ' ' ;
             }
-            if( str[i] == 's' && str[i+1] == 'q' && str[i+3] == '('){
+            if( str[i] == 's' && str[i+1] == 'q' && str[i+2] == '('){
                 str[i] = 'p' ;
                 str[i+1] = ' ' ;
             }
-            if( str[i] == 'c' && str[i+1] == 'b' && str[i+3] == '(' ){
+            if( str[i] == 'c' && str[i+1] == 'b' && str[i+2] == '(' ){
                 str[i] = 'q' ;
                 str[i+1] = ' ' ;
             }
@@ -811,6 +784,33 @@ int check_string( char *str ) {
                 str[i] = 'l' ;
                 str[i+1] = str[i+2] = ' ' ;
             }
+		
+	    if( str[i] == 's' && str[i+1] == 'i' && str[i+2] == 'n' && str[i+3] == '(' ){
+                str[i] = 's' ;
+                str[i+1] = str[i+2] = ' ' ;
+	    }
+	    else if( str[i] == 's' ){
+		if( str[i+1] != '(' )
+		return 4 ;
+	    }
+
+	    if( str[i] == 'c' && str[i+1] == 'o' && str[i+2] == 's' && str[i+3] == '(' ){
+                str[i] = 'c' ;
+                str[i+1] = str[i+2] = ' ' ;
+            }
+	    else if( str[i] == 'c' ){
+		if( str[i+1] != '(' )
+		return 4 ;
+	    }
+
+	    if( str[i] == 't' && str[i+1] == 'a' && str[i+2] == 'n' && str[i+3] == '(' ){
+                str[i] = 't' ;
+                str[i+1] = str[i+2] = ' ' ;
+            }
+	    else if( str[i] == 't' ){
+		if( str[i+1] != '(' )
+		return 4 ;
+	    }
             flag = 0 ;
             pt = 0 ;
         }
